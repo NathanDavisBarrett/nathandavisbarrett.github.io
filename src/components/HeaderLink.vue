@@ -91,27 +91,104 @@ export default {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
+    transition: transform 0.2s ease;
+}
+
+.headerLink:hover {
+    transform: translateY(-2px);
 }
 
 .routerLink {
-    color: #1e5d15;
+    color: var(--text-primary);
+    font-weight: 500;
+    font-size: 0.95rem;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    background: transparent;
+    border: 1px solid transparent;
+    transition: all 0.2s ease;
+    position: relative;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 120px;
+    white-space: nowrap;
+}
+
+.routerLink::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--accent-primary);
+    opacity: 0;
+    border-radius: 8px;
+    transition: opacity 0.2s ease;
+    z-index: -1;
 }
 
 .routerLink:hover {
-    color: red;
+    color: white;
+    border-color: var(--accent-primary);
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+}
+
+.routerLink:hover::before {
+    opacity: 1;
+}
+
+.routerLink.router-link-active {
+    color: white;
+    border-color: var(--accent-primary);
+    background: var(--accent-primary);
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.4);
 }
 
 .lineContainer {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 45px;
-    height: 20px;
+    width: 100%;
+    height: 4px;
+    margin-top: 0.5rem;
+    position: relative;
+    overflow: hidden;
 }
 
 .line {
-    border-bottom: 5px solid #1e5d15;
+    height: 3px;
+    background: linear-gradient(90deg, var(--accent-primary), var(--accent-secondary));
+    border-radius: 2px;
+    transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 2px 8px rgba(59, 130, 246, 0.4);
 }
 
+@media (max-width: 768px) {
+    .routerLink {
+        padding: 0.5rem 1rem;
+        font-size: 0.875rem;
+        min-width: 100px;
+    }
+    
+    .lineContainer {
+        height: 3px;
+        margin-top: 0.25rem;
+    }
+    
+    .line {
+        height: 2px;
+    }
+}
 
+@media (max-width: 480px) {
+    .routerLink {
+        padding: 0.5rem 0.75rem;
+        font-size: 0.8rem;
+        min-width: 80px;
+    }
+}
 </style>

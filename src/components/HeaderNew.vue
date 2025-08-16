@@ -1,17 +1,16 @@
 <template>
-  <div class="Header">
+  <div class="Header" :class="{ 'header-scrolled': isScrolled }">
       <div class="header-content">
-          <div class="logoContainer">
+          <div class="logoContainer" :class="{ 'logo-collapsed': isScrolled }">
               <img src="NLogo_New_Transparent.png" alt="Nathan Barrett Logo">
           </div>
 
-          <div class="mainName">
-              <h1>Nathan Davis Barrett:~$<span class="blink">_</span></h1>
-              <div class="attrFullList">
-                  <span v-for="(attr, index) in codeNameAttrs" :key="attr">
-                      <h2 v-if="index != 0">,&#160;</h2>
-                      <h2>{{attr}}</h2>
-                  </span>
+          <div class="routerLinksContainer" :class="{ 'nav-collapsed': isScrolled }">
+              <div class="routerLinks">
+                  <HeaderLink v-bind:linkLocation="'about'" v-bind:displayText="'About'" v-bind:selection="selection" v-on:click="setSelection('about')"/>
+                  <HeaderLink v-bind:linkLocation="'cv'" v-bind:displayText="'CV'" v-bind:selection="selection" v-on:click="setSelection('cv')"/>
+                  <HeaderLink v-bind:linkLocation="'research_projects'" v-bind:displayText="'Research Projects'" v-bind:selection="selection" v-on:click="setSelection('research_projects')"/>
+                  <HeaderLink v-bind:linkLocation="'personal_projects'" v-bind:displayText="'Personal Projects'" v-bind:selection="selection" v-on:click="setSelection('personal_projects')"/>
               </div>
           </div>
 
@@ -27,12 +26,13 @@
               </a>
           </div>
 
-          <div class="routerLinksContainer">
-              <div class="routerLinks">
-                  <HeaderLink v-bind:linkLocation="'about'" v-bind:displayText="'About'" v-bind:selection="selection" v-on:click="setSelection('about')"/>
-                  <HeaderLink v-bind:linkLocation="'cv'" v-bind:displayText="'CV'" v-bind:selection="selection" v-on:click="setSelection('cv')"/>
-                  <HeaderLink v-bind:linkLocation="'research_projects'" v-bind:displayText="'Research Projects'" v-bind:selection="selection" v-on:click="setSelection('research_projects')"/>
-                  <HeaderLink v-bind:linkLocation="'personal_projects'" v-bind:displayText="'Personal Projects'" v-bind:selection="selection" v-on:click="setSelection('personal_projects')"/>
+          <div class="mainName" v-show="!isScrolled">
+              <h1>Nathan Davis Barrett:~$<span class="blink">_</span></h1>
+              <div class="attrFullList">
+                  <span v-for="(attr, index) in codeNameAttrs" :key="attr">
+                      <h2 v-if="index != 0">,&#160;</h2>
+                      <h2>{{attr}}</h2>
+                  </span>
               </div>
           </div>
       </div>
@@ -52,23 +52,41 @@ export default {
       return {
           myName: "NathanDavisBarrett",
           codeNameAttrs: ["Thermophysical Simulation Engineer"],
-          selection: ""
+          selection: "",
+          isScrolled: false,
+          scrollThreshold: 100
       }
   },
   methods: {
       setSelection(newSelection) {
           this.selection = newSelection;
+      },
+      handleScroll() {
+          this.isScrolled = window.scrollY > this.scrollThreshold;
       }
+  },
+  mounted() {
+      window.addEventListener('scroll', this.handleScroll);
+      this.handleScroll(); // Check initial scroll position
+  },
+  beforeUnmount() {
+      window.removeEventListener('scroll', this.handleScroll);
   }
 }
 </script>
 
 <style scoped>
 .Header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
     background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
     border-bottom: 1px solid var(--border-color);
-    position: relative;
-    overflow: hidden;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
 }
 
 .Header::before {
@@ -80,52 +98,96 @@ export default {
     bottom: 0;
     background: radial-gradient(circle at 50% 50%, rgba(59, 130, 246, 0.1) 0%, transparent 70%);
     pointer-events: none;
+    transition: opacity 0.3s ease;
 }
 
 .header-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
     position: relative;
+    overflow: hidden;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     max-width: 1200px;
     margin: 0 auto;
-    padding: 2rem;
-    display: grid;
-    grid-template-columns: auto 1fr auto;
-    grid-template-rows: auto auto auto;
-    grid-template-areas: 
-        "logo . profile"
-        "name name name"
-        "nav nav nav";
-    gap: 2rem;
+}
+
+/* Scrolled state */
+.header-scrolled {
+    background: rgba(10, 10, 11, 0.95);
+    border-bottom-color: var(--border-color);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.header-scrolled::before {
+    opacity: 0.5;
+}
+
+.header-scrolled .header-content {
+    padding: 0.75rem 2rem;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
 }
 
 .logoContainer {
-    grid-area: logo;
     display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: flex-start;
+    margin: 2rem 0;
+    position: relative;
+    z-index: 10;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    order: 2;
 }
 
 .logoContainer img {
-    width: 80px;
-    height: auto;
-    filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.3));
-    transition: transform 0.3s ease;
+    max-width: 300px;
+    max-height: 150px;
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3));
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .logoContainer:hover img {
     transform: scale(1.05);
 }
 
+/* Logo collapsed state */
+.logo-collapsed {
+    margin: 0 !important;
+    order: 1;
+}
+
+.logo-collapsed img {
+    max-width: 60px !important;
+    max-height: 40px !important;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+}
+
 .profilePalate {
-    grid-area: profile;
     display: flex;
-    gap: 1rem;
+    flex-direction: row;
+    justify-content: flex-end;
     align-items: center;
+    gap: 1rem;
+    padding: 0 2rem;
+    position: relative;
+    z-index: 10;
+    transition: all 0.3s ease;
+    order: 4;
+}
+
+.header-scrolled .profilePalate {
+    order: 3;
+    padding: 0;
 }
 
 .profilePalate a {
     height: 40px;
     width: 40px;
+    padding: 0;
     border-radius: 8px;
     display: flex;
     align-items: center;
@@ -155,11 +217,16 @@ export default {
 }
 
 .mainName {
-    grid-area: name;
     display: flex;
     flex-direction: column;
+    width: 100%;
+    justify-content: center;
     align-items: center;
-    text-align: center;
+    margin: 2rem 0;
+    position: relative;
+    z-index: 10;
+    transition: all 0.3s ease;
+    order: 3;
 }
 
 .mainName h1 {
@@ -192,15 +259,17 @@ export default {
 
 .attrFullList {
     display: flex;
+    width: 90%;
+    max-width: 600px;
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
     gap: 0.5rem;
-    max-width: 600px;
 }
 
 .attrFullList span {
     display: flex;
+    flex-direction: row;
     align-items: center;
 }
 
@@ -223,53 +292,78 @@ export default {
 }
 
 .routerLinksContainer {
-    grid-area: nav;
     display: flex;
+    width: 100%;
     justify-content: center;
+    margin: 3rem 0 2rem 0;
+    position: relative;
+    z-index: 10;
+    transition: all 0.3s ease;
+    order: 1;
 }
 
 .routerLinks {
     display: flex;
+    max-width: 800px;
+    width: 90%;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
     gap: 1rem;
     background: var(--bg-secondary);
     padding: 1rem;
     border-radius: 16px;
     border: 1px solid var(--border-color);
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
-    flex-wrap: wrap;
+    transition: all 0.3s ease;
+}
+
+/* Navigation collapsed state */
+.nav-collapsed {
+    margin: 0;
+    order: 2;
+    flex: 1;
+    max-width: none;
+}
+
+.nav-collapsed .routerLinks {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    padding: 0.5rem 1rem;
+    max-width: none;
+    width: auto;
     justify-content: center;
 }
 
-/* Responsive Design */
 @media (max-width: 968px) {
     .header-content {
-        grid-template-columns: 1fr;
-        grid-template-areas: 
-            "logo"
-            "profile"
-            "name"
-            "nav";
-        text-align: center;
-        gap: 1.5rem;
+        padding: 1rem;
     }
     
-    .logoContainer {
-        justify-content: center;
+    .header-scrolled .header-content {
+        flex-direction: column;
+        gap: 0.5rem;
+        padding: 0.75rem 1rem;
     }
     
-    .profilePalate {
-        justify-content: center;
+    .logo-collapsed {
+        order: 1;
+    }
+    
+    .nav-collapsed {
+        order: 2;
+    }
+    
+    .header-scrolled .profilePalate {
+        order: 3;
     }
 }
 
 @media (max-width: 768px) {
-    .header-content {
-        padding: 1.5rem 1rem;
-        gap: 1rem;
-    }
-    
-    .logoContainer img {
-        width: 60px;
+    .profilePalate {
+        padding: 0 1rem;
+        gap: 0.5rem;
     }
     
     .profilePalate a {
@@ -282,10 +376,26 @@ export default {
         width: 20px;
     }
     
+    .logoContainer img {
+        max-width: 200px;
+        max-height: 100px;
+    }
+    
+    .logo-collapsed img {
+        max-width: 50px !important;
+        max-height: 35px !important;
+    }
+    
     .routerLinks {
         flex-direction: column;
         gap: 0.5rem;
         padding: 1rem 0.5rem;
+    }
+    
+    .nav-collapsed .routerLinks {
+        flex-direction: row;
+        gap: 0.25rem;
+        padding: 0.25rem;
     }
     
     .attrFullList h2 {
@@ -296,19 +406,19 @@ export default {
 
 @media (max-width: 480px) {
     .header-content {
-        padding: 1rem 0.5rem;
+        padding: 0.5rem;
     }
     
-    .logoContainer img {
-        width: 50px;
+    .profilePalate {
+        padding: 0 0.5rem;
     }
     
     .mainName h1 {
         font-size: 2rem;
     }
     
-    .profilePalate {
-        gap: 0.5rem;
+    .nav-collapsed .routerLinks {
+        gap: 0.125rem;
     }
 }
 </style>
