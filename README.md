@@ -1,4 +1,4 @@
-# nathandavisbarrett.com
+# NathanDavisBarrett.com
 
 ## Project setup
 ```
