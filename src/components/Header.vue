@@ -1,38 +1,44 @@
 <template>
   <div class="Header">
-      <div class="header-content">
-          <div class="logoContainer">
-              <img src="NLogo_New_Transparent.png" alt="Nathan Barrett Logo">
-          </div>
+      <!-- Sticky header bar with logo, profile, and navigation -->
+      <div class="sticky-header">
+          <div class="sticky-content">
+              <div class="logoContainer">
+                  <img src="NLogo_New_Transparent.png" alt="Nathan Barrett Logo">
+              </div>
 
+              <div class="routerLinksContainer">
+                  <div class="routerLinks">
+                      <HeaderLink v-bind:linkLocation="'about'" v-bind:displayText="'About'" v-bind:selection="selection" v-on:click="setSelection('about')"/>
+                      <HeaderLink v-bind:linkLocation="'cv'" v-bind:displayText="'CV'" v-bind:selection="selection" v-on:click="setSelection('cv')"/>
+                      <HeaderLink v-bind:linkLocation="'research_projects'" v-bind:displayText="'Research Projects'" v-bind:selection="selection" v-on:click="setSelection('research_projects')"/>
+                      <HeaderLink v-bind:linkLocation="'personal_projects'" v-bind:displayText="'Personal Projects'" v-bind:selection="selection" v-on:click="setSelection('personal_projects')"/>
+                  </div>
+              </div>
+
+              <div class="profilePalate">
+                  <a href="https://github.com/NathanDavisBarrett" title="GitHub" target="_blank">
+                      <img src="GitHub-Mark-Light-120px-plus.png">
+                  </a>
+                  <a href="https://www.linkedin.com/in/nathandavisbarrett/" title="LinkedIn" target="_blank">
+                      <img src="In-Blue-Logo.png.original.png">
+                  </a>
+                  <a href="https://scholar.google.com/citations?user=4KekiOAAAAAJ&hl=en" title="Google Scholar" target="_blank">
+                      <img src="google-scholar.png">
+                  </a>
+              </div>
+          </div>
+      </div>
+
+      <!-- Scrollable main name section -->
+      <div class="hero-section">
           <div class="mainName">
               <h1>Nathan Davis Barrett:~$<span class="blink">_</span></h1>
               <div class="attrFullList">
                   <span v-for="(attr, index) in codeNameAttrs" :key="attr">
-                      <h2 v-if="index != 0">,&#160;</h2>
+                      <h2 v-if="index != 0">&#160;</h2>
                       <h2>{{attr}}</h2>
                   </span>
-              </div>
-          </div>
-
-          <div class="profilePalate">
-              <a href="https://github.com/NathanDavisBarrett" title="GitHub" target="_blank">
-                  <img src="GitHub-Mark-Light-120px-plus.png">
-              </a>
-              <a href="https://www.linkedin.com/in/nathandavisbarrett/" title="LinkedIn" target="_blank">
-                  <img src="In-Blue-Logo.png.original.png">
-              </a>
-              <a href="https://scholar.google.com/citations?user=4KekiOAAAAAJ&hl=en" title="Google Scholar" target="_blank">
-                  <img src="google-scholar.png">
-              </a>
-          </div>
-
-          <div class="routerLinksContainer">
-              <div class="routerLinks">
-                  <HeaderLink v-bind:linkLocation="'about'" v-bind:displayText="'About'" v-bind:selection="selection" v-on:click="setSelection('about')"/>
-                  <HeaderLink v-bind:linkLocation="'cv'" v-bind:displayText="'CV'" v-bind:selection="selection" v-on:click="setSelection('cv')"/>
-                  <HeaderLink v-bind:linkLocation="'research_projects'" v-bind:displayText="'Research Projects'" v-bind:selection="selection" v-on:click="setSelection('research_projects')"/>
-                  <HeaderLink v-bind:linkLocation="'personal_projects'" v-bind:displayText="'Personal Projects'" v-bind:selection="selection" v-on:click="setSelection('personal_projects')"/>
               </div>
           </div>
       </div>
@@ -51,7 +57,7 @@ export default {
   data() {
       return {
           myName: "NathanDavisBarrett",
-          codeNameAttrs: ["Thermophysical Simulation Engineer"],
+          codeNameAttrs: ["Decision Intelligence", "High-Performance Computing", "Modeling/Simulation Engineering"],
           selection: ""
       }
   },
@@ -66,7 +72,6 @@ export default {
 <style scoped>
 .Header {
     background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
-    border-bottom: 1px solid var(--border-color);
     position: relative;
     overflow: hidden;
 }
@@ -82,18 +87,28 @@ export default {
     pointer-events: none;
 }
 
-.header-content {
-    position: relative;
+/* Sticky header bar */
+.sticky-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 9999;
+    background: rgba(10, 10, 11, 0.95);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--border-color);
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+}
+
+.sticky-content {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 2rem;
+    padding: 0.75rem 2rem;
     display: grid;
     grid-template-columns: auto 1fr auto;
-    grid-template-rows: auto auto auto;
-    grid-template-areas: 
-        "logo . profile"
-        "name name name"
-        "nav nav nav";
+    grid-template-areas: "logo nav profile";
     gap: 2rem;
     align-items: center;
 }
@@ -102,11 +117,10 @@ export default {
     grid-area: logo;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
 }
 
 .logoContainer img {
-    width: 80px;
+    width: 50px;
     height: auto;
     filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.3));
     transition: transform 0.3s ease;
@@ -116,16 +130,32 @@ export default {
     transform: scale(1.05);
 }
 
+.routerLinksContainer {
+    grid-area: nav;
+    display: flex;
+    justify-content: center;
+}
+
+.routerLinks {
+    display: flex;
+    gap: 0.5rem;
+    background: transparent;
+    padding: 0.5rem;
+    border-radius: 12px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 .profilePalate {
     grid-area: profile;
     display: flex;
-    gap: 1rem;
+    gap: 0.75rem;
     align-items: center;
 }
 
 .profilePalate a {
-    height: 40px;
-    width: 40px;
+    height: 36px;
+    width: 36px;
     border-radius: 8px;
     display: flex;
     align-items: center;
@@ -143,8 +173,8 @@ export default {
 }
 
 .profilePalate img {
-    height: 24px;
-    width: 24px;
+    height: 20px;
+    width: 20px;
     object-fit: contain;
     filter: brightness(0.9);
     transition: filter 0.2s ease;
@@ -154,12 +184,24 @@ export default {
     filter: brightness(1.2);
 }
 
+/* Hero section with main name (scrollable) */
+.hero-section {
+    position: relative;
+    z-index: 1;
+    padding: 6rem 2rem 4rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+}
+
 .mainName {
-    grid-area: name;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    max-width: 1200px;
+    width: 100%;
 }
 
 .mainName h1 {
@@ -172,7 +214,7 @@ export default {
     -webkit-text-fill-color: transparent;
     background-clip: text;
     animation: gradientShift 3s ease-in-out infinite;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 
 @keyframes gradientShift {
@@ -195,7 +237,7 @@ export default {
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 0.5rem;
+    gap: 0.75rem;
     max-width: 600px;
 }
 
@@ -210,105 +252,123 @@ export default {
     font-weight: 400;
     color: var(--text-secondary);
     background: var(--bg-tertiary);
-    padding: 0.5rem 1rem;
-    border-radius: 20px;
+    padding: 0.75rem 1.5rem;
+    border-radius: 25px;
     border: 1px solid var(--border-color);
     transition: all 0.2s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .attrFullList h2:hover {
     color: var(--text-primary);
     border-color: var(--accent-primary);
-    transform: translateY(-1px);
-}
-
-.routerLinksContainer {
-    grid-area: nav;
-    display: flex;
-    justify-content: center;
-}
-
-.routerLinks {
-    display: flex;
-    gap: 1rem;
-    background: var(--bg-secondary);
-    padding: 1rem;
-    border-radius: 16px;
-    border: 1px solid var(--border-color);
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
-    flex-wrap: wrap;
-    justify-content: center;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 16px rgba(59, 130, 246, 0.2);
 }
 
 /* Responsive Design */
 @media (max-width: 968px) {
-    .header-content {
+    .sticky-content {
         grid-template-columns: 1fr;
         grid-template-areas: 
             "logo"
-            "profile"
-            "name"
-            "nav";
+            "nav"
+            "profile";
+        gap: 1rem;
         text-align: center;
-        gap: 1.5rem;
+        padding: 1rem;
     }
     
-    .logoContainer {
+    .routerLinks {
         justify-content: center;
+        gap: 0.25rem;
     }
     
     .profilePalate {
         justify-content: center;
+    }
+    
+    .hero-section {
+        padding: 5rem 1rem 3rem 1rem;
+        min-height: 50vh;
     }
 }
 
 @media (max-width: 768px) {
-    .header-content {
-        padding: 1.5rem 1rem;
-        gap: 1rem;
+    .sticky-content {
+        padding: 0.75rem 1rem;
+        gap: 0.75rem;
     }
     
     .logoContainer img {
-        width: 60px;
+        width: 40px;
     }
     
     .profilePalate a {
-        height: 36px;
-        width: 36px;
+        height: 32px;
+        width: 32px;
     }
     
     .profilePalate img {
-        height: 20px;
-        width: 20px;
+        height: 18px;
+        width: 18px;
     }
     
     .routerLinks {
-        flex-direction: column;
-        gap: 0.5rem;
-        padding: 1rem 0.5rem;
+        gap: 0.25rem;
+    }
+    
+    .hero-section {
+        padding: 4.5rem 1rem 2rem 1rem;
+        min-height: 40vh;
     }
     
     .attrFullList h2 {
         font-size: 0.9rem;
-        padding: 0.25rem 0.75rem;
+        padding: 0.5rem 1rem;
     }
 }
 
 @media (max-width: 480px) {
-    .header-content {
-        padding: 1rem 0.5rem;
+    .sticky-content {
+        padding: 0.5rem;
+        gap: 0.5rem;
     }
     
     .logoContainer img {
-        width: 50px;
-    }
-    
-    .mainName h1 {
-        font-size: 2rem;
+        width: 35px;
     }
     
     .profilePalate {
         gap: 0.5rem;
+    }
+    
+    .profilePalate a {
+        height: 30px;
+        width: 30px;
+    }
+    
+    .profilePalate img {
+        height: 16px;
+        width: 16px;
+    }
+    
+    .mainName h1 {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .hero-section {
+        padding: 4rem 0.5rem 1.5rem 0.5rem;
+    }
+    
+    .attrFullList {
+        gap: 0.5rem;
+    }
+    
+    .attrFullList h2 {
+        font-size: 0.8rem;
+        padding: 0.4rem 0.8rem;
     }
 }
 </style>

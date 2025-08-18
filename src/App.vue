@@ -32,6 +32,29 @@ export default {
     background: var(--bg-primary);
 }
 
+/* Ensure page content doesn't get hidden behind fixed header */
+.about, .CV, .researchProjects, .personalProjects {
+    padding-top: 120px; /* Account for fixed header height */
+}
+
+@media (max-width: 968px) {
+  .about, .CV, .researchProjects, .personalProjects {
+    padding-top: 160px; /* Increase padding for larger mobile header */
+  }
+}
+
+@media (max-width: 768px) {
+  .about, .CV, .researchProjects, .personalProjects {
+    padding-top: 180px; /* Further increase for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .about, .CV, .researchProjects, .personalProjects {
+    padding-top: 200px; /* Maximum padding for very small screens */
+  }
+}
+
 #nav {
   padding: 30px;
 }
