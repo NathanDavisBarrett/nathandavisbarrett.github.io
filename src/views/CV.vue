@@ -13,7 +13,6 @@
                     <li>Current Project: Modeling/solution techniques to increase detail of thermal power plant startup/shutdown dynamics in unit commitment models</li>
                     <li>Princeton Research Computing: Frequent use of the Della cluster for large-scale Mixed-integer optimization problems</li>
                     <li>Designated Maravelias Group cluster expert/manager</li>
-                    <li>Relevant Courses: Linear & Nonlinear Optimization, Energy Systems Optimization, Stochastic Programming, Structural Optimization, Transport Phenomena, Thermodynamics</li>
                 </ul>
             </div>
             <div class="subcvSection">
@@ -25,8 +24,7 @@
                 <ul>
                     <li>GPA: 3.95/4.00</li>
                     <li>Magna Cum Laude</li>
-                    <li>Relevant Courses: High-Performance Computing, Molecular Modeling, Software Engineering, Python for Engineers</li>
-                    <li>Awards/Honors: BYU Chem. Eng. Outstanding Senior Award, BYU Chem. Eng. Outstanding Junior Award, Brigham Young Scholarship, Chem. Eng. Dept. Scholarship</li>
+                    <li>Minor: Computer Science</li>
                 </ul>
             </div>
         </div>
@@ -238,7 +236,7 @@
                     <p></p>
                 </div>
                 <div class="compactList">
-                    <p>Linear & Nonlinear Optimization, Energy Systems Optimization, Stochastic Programming, Structural Optimization, High-Performance and Parallel Computing, Software Engineering, Data Structures, Advanced Programming Concepts</p>
+                    <p>Linear & Nonlinear Optimization, Energy Systems Optimization, Stochastic Programming, Structural Optimization, High-Performance and Parallel Computing, Software Engineering, Data Structures, Advanced Programming Concepts, Python for Engineers</p>
                 </div>
             </div>
 
