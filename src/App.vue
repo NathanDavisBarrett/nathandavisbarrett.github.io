@@ -18,8 +18,6 @@ export default {
         Header,
     },
     created() {
-        this.$globalData = {};
-        this.$globalData["headerSelection"] = "about";
     }
 }
 </script>
