@@ -35,8 +35,8 @@
           <div class="mainName">
               <h1>Nathan Davis Barrett:~$<span class="blink">_</span></h1>
               <div class="attrFullList">
-                  <span v-for="(attr, index) in codeNameAttrs" :key="attr">
-                      <h2 v-if="index != 0">&#160;</h2>
+                  <span v-for="(attr, _) in codeNameAttrs" :key="attr">
+                      <!-- <h2 v-if="index != 0">,&#160;</h2> -->
                       <h2>{{attr}}</h2>
                   </span>
               </div>
@@ -192,7 +192,6 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 60vh;
 }
 
 .mainName {
@@ -290,7 +289,6 @@ export default {
     
     .hero-section {
         padding: 5rem 1rem 3rem 1rem;
-        min-height: 50vh;
     }
 }
 
@@ -320,7 +318,6 @@ export default {
     
     .hero-section {
         padding: 4.5rem 1rem 2rem 1rem;
-        min-height: 40vh;
     }
     
     .attrFullList h2 {
