@@ -4,7 +4,7 @@
       <div class="sticky-header">
           <div class="sticky-content">
               <div class="logoContainer">
-                  <img src="NLogo_New_Transparent.png" alt="Nathan Barrett Logo">
+                  <router-link to="/about" @click="setSelection('about')"><img src="NLogo_BluePurple.png" alt="Nathan Barrett Logo"></router-link>
               </div>
 
               <div class="routerLinksContainer">

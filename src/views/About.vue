@@ -10,7 +10,7 @@
                         For me, success is about finding the right balance: pursuing intellectually rigorous work while prioritizing health, family, and the simple joy of learning something new.</p>
                     </div>
                     <div class="image-wrapper">
-                        <img src="profilePhoto.png" alt="Profile photo">
+                        <img src="profilePhoto.jpg" alt="Profile photo">
                     </div>
                 </div>
             </section>

@@ -74,7 +74,7 @@
 
                 <div class="project-card card">
                     <div class="project-image">
-                        <img src="NLogo_New_Transparent.png" alt="Web Development projects">
+                        <img src="NLogo_BluePurple.png" alt="Web Development projects">
                     </div>
                     <div class="project-content">
                         <h2 class="project-title">Various Web Development Projects</h2>

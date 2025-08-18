@@ -2,7 +2,7 @@
   <div class="Header" :class="{ 'header-scrolled': isScrolled }">
       <div class="header-content">
           <div class="logoContainer" :class="{ 'logo-collapsed': isScrolled }">
-              <img src="NLogo_New_Transparent.png" alt="Nathan Barrett Logo">
+              <img src="NLogo_BluePurple.png" alt="Nathan Barrett Logo">
           </div>
 
           <div class="routerLinksContainer" :class="{ 'nav-collapsed': isScrolled }">
