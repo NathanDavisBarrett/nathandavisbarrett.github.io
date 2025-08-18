@@ -5,44 +5,70 @@
             
             <div class="projects-grid">
                 <div class="project-card card">
-                    <div class="project-image">
-                        <img src="McCabeThile.png" alt="NathanLibrary project">
+                    <div class="project-content">
+                        <h2 class="project-title">A Pure-Python Mixed-Integer Linear Programming (MILP) Solver</h2>
+                        <div class="project-tags">
+                            <span class="tag">Optimization</span>
+                            <span class="tag">Mathematics</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">Algorithms</span>
+                        </div>
+                        <p> Algorithms, math, and their application to the real-world have always fascinated me.</p>
+                        <p>That's why I spent a substantial amount of my personal "fun project time" dedicated to building a fully-functional MILP solver in pure python. Originally, this was just so that I could fully and completely understand how these solvers work. But in retrospect, it's a great educational guide to others.</p>
+                        <p> I made sure to balance the beauty and elegance of the python programming language with several best-practices for matrix sparsity, algorithms, and general software engineering</p>
+                            
+                        <div class="project-links">
+                            <a href="https://github.com/NathanDavisBarrett/NathansBranchAndCut" target="_blank" class="btn btn-primary">
+                                View on GitHub
+                            </a>
+                        </div>
                     </div>
+                    <div class="project-image">
+                        <img src="BranchAndBound.PNG" alt="MILP solver project">
+                    </div>
+                </div>
+                <div class="project-card card">
+                    <div class="project-image">
+                        <img src="computationalDecisionMaking.png" alt="Computational Decision Making Course">
+                    </div>
+                    <div class="project-content">
+                        <h2 class="project-title">Computational Decision Making for Regular People</h2>
+                        <div class="project-tags">
+                            <span class="tag">Education</span>
+                            <span class="tag">Optimization</span>
+                            <span class="tag">Mathematics</span>
+                            <span class="tag">Modeling</span>
+                        </div>
+                        <p> I've found that learning about optimization, mathematical modeling, and simulation can be frustratingly difficult, especially if you don't have a good teacher and a good place to start.</p>
+                        <p>Simultaneously, I see the immense potential for positive impact that this kind of modeling can have on every-day peoples' lives: From deicing which insurance plan to purchase, to planning out how to save for retirement, to organizing daily and weekly tasks.</p>
+                        <p> So I coupled my passion for learning and teaching with my passion for optimization and mathematical modeling to create a publicly accessible course on the topic. I've given this course to several community members from diverse backgrounds with math/coding and received phenomenal reviews all around.</p>
+                            
+                        <div class="project-links">
+                            <a href="https://github.com/NathanDavisBarrett/ComputationalDecisionMakingCourse" target="_blank" class="btn btn-primary">
+                                View on GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card card">
                     <div class="project-content">
                         <h2 class="project-title">The NathanLibrary</h2>
                         <div class="project-tags">
                             <span class="tag">Python</span>
                             <span class="tag">Chemical Engineering</span>
-                            <span class="tag">Algorithm</span>
+                            <span class="tag">Algorithms</span>
                         </div>
-                        <p>As Chemical Engineering majors, we sure are expected to know a lot about how to code. For a Computer Scientist such as myself this comes naturally, but for a lot of others it can be a major challenge.</p>
+                        <p>As chemical engineering majors, we sure are expected to know a lot about how to code. For a computer scientist such as myself this comes naturally, but for a lot of others it can be a major challenge.</p>
                         <p>So I've compiled all of the custom functions, classes, algorithms, procedures, etc. that I've written over the course of my time in the Chemical Engineering major into one boilerplate that is easy to import and move around. This is done so that others can have easy access to a variety of problem solving tools while still being able to see how those tools work. That's why I haven't converted the NathanLibrary to a dedicated python module and moved a lot of the heavy computing to C++. Students can see my solution, and use it as a pattern to create their own.</p>
-                        <p>Additionally, a lot of the libraries we use as Chemical Engineers are not compatible with eachother (e.g. Sympy, pint, numpy, and scipy all have significant limitations in working with eachother). The NathanLibrary is written in a way to make each of these libraries cross-compatible. One example would be that scipy's fsolve function does not work with pint variables. So I've written an explanative wrapper function "pintSolve" to rectify this.</p>
+                        <p>Additionally, a lot of the libraries we use as Chemical Engineers are not compatible with eachother (e.g. Sympy, pint, numpy, and scipy all have significant limitations in working with eachother). The NathanLibrary is written in a way to make each of these libraries cross-compatible.</p>
                         <div class="project-links">
                             <a href="https://github.com/NathanDavisBarrett/NathanLibrary" target="_blank" class="btn btn-primary">
                                 View on GitHub
                             </a>
                         </div>
                     </div>
-                </div>
-
-                <div class="project-card card">
                     <div class="project-image">
-                        <img src="deepLearning.jpg" alt="Deep Learning project">
-                    </div>
-                    <div class="project-content">
-                        <h2 class="project-title">Material Properties Deep Learning Model</h2>
-                        <div class="project-tags">
-                            <span class="tag">Python</span>
-                            <span class="tag">PyTorch</span>
-                            <span class="tag">Machine Learning</span>
-                            <span class="tag">Deep Learning</span>
-                            <span class="tag">Materials</span>
-                        </div>
-                        <p>I love taking the skills that I have and applying them to new fields. This is the case with this project. Deep learning is widely in use throughout the world for purposes such as computer vision, voice recognition, fraud detection, etc. A new up-and-coming application is that of physical property prediction. Here's the problem: We know a lot about chemicals' molecular properties like their shape, size, electron density, and characteristics. We know a lot about their macroscopic properties (melting point, vapor pressure, density...) from empirical evidence. But wouldn't it be cool if we could predict these properties just from their molecular structure? After all, that is where those macroscopic properties originate. But to do this now requires massive MD simulations to even get a glimpse of what these properties could be.</p>
-                        <p><strong>The Goal</strong> of my deep learning model is to use the vast ammounts of data we have about chemicals' macroscopic properties and the separate, but equally vast, amounts of data we have about chemicals' molecular sctructures to train a Deep Learning model to take in a molecular structure and predict it's macroscopic properties <strong>without the need of any physical tests</strong>.</p>
-                        <p>If the model works well, it could serve as an extremely useful resource A) to the development of new chemicals since we wouldn't have to run multi-million dollar tests to accurately determine their macroscopic properties and B) to make these properties much more accessible to the public since most macroscopic data can only be found in costly textbooks, institutional databases, or are found with one's own equipment.</p>
-                        <p>My Model is currently being written using the PyTorch machine learning framework.</p>
+                        <img src="McCabeThile.png" alt="NathanLibrary project">
                     </div>
                 </div>
 
@@ -58,11 +84,11 @@
                             <span class="tag">Web Development</span>
                             <span class="tag">Angular</span>
                         </div>
-                        <p>What I love about web development is the freedom it allows me to have while still using my talents and skills. I enjoy spending my spare time making great-looking websites. Examples (with their accompanying source code) include <a href="http://www.nathandavisbarrett.com" target="_blank">this website</a> (<a href="https://github.com/NathanDavisBarrett/NathanDavisBarrett.com" target="_blank">code</a>), my wife's website <a href="http://www.catherinabarrett.com" target="_blank">CatherinaBarrett.com</a> (<a href="https://github.com/NathanDavisBarrett/CatherinaBarrett.com" target="_blank">code</a>), our wedding website <a href="http://ww.kateandnatebarrett.com" target="_blank">KateAndNateBarrett.com</a> (<a href="https://github.com/NathanDavisBarrett/weddingWebsite" target="_blank">code</a>), and several others that can be found on my <a href="https://github.com/NathanDavisBarrett" target="_blank">Github</a>.</p>
+                        <p>What I love about web development is the freedom it allows me to have while still using my talents and skills. I enjoy spending my spare time making great-looking websites. Examples (with their accompanying source code) include this website (<a href="https://github.com/NathanDavisBarrett/NathanDavisBarrett.com" target="_blank">code</a>), a custom website for my wedding (<a href="https://github.com/NathanDavisBarrett/weddingWebsite" target="_blank">code</a>), and several others that can be found on my <a href="https://github.com/NathanDavisBarrett" target="_blank">Github</a>.</p>
                         <p>While most of my experience is with Vue, I'm also currently learning the Angular framework and intend to learn the React framework eventually.</p>
                         <div class="project-links">
-                            <a href="https://github.com/NathanDavisBarrett" target="_blank" class="btn btn-primary">
-                                View All Projects
+                            <a href="https://github.com/NathanDavisBarrett/NathanDavisBarrett.com" target="_blank" class="btn btn-primary">
+                                View On GitHub
                             </a>
                         </div>
                     </div>

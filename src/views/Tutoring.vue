@@ -4,8 +4,8 @@
             <!-- Hero Section -->
             <section class="tutoring-hero">
                 <div class="hero-content">
-                    <h1 class="hero-title">Private Tutoring Services</h1>
-                    <p class="hero-subtitle">Personalized academic support in STEM subjects with more than a decade of tutoring, teaching, and academic mentorship</p>
+                    <h1 class="hero-title">Premier Private Tutoring Services</h1>
+                    <p class="hero-subtitle">Personalized academic support in STEM subjects with more than a decade of tutoring, teaching, and academic mentorship from an Ivy-League engineering scholar</p>
                     <div class="hero-cta">
                         <a href="#contact" class="btn btn-primary">Schedule a Session</a>
                         <a href="#subjects" class="btn btn-secondary">View Subjects</a>

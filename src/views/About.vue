@@ -5,10 +5,12 @@
                 <h1 class="page-title">Overview</h1>
                 <div class="aboutSection card">
                     <div class="aboutSectionTextWrapper">
-                        <p class="lead-text">Nothing thrills me more than the feeling I get when my projects make a difference for the people around me. Whether it be a new computer algorithm, a breakthrough approach to solving a difficult homework problem with friends, or even a musical piece I preform for a few of my loved ones. This is what drives me to be a great engineer, researcher, student, husband, friend, and community member.</p>
+                        <p class="lead-text">I'm driven by a passion for solving complex problems and a belief that meaningful work and a fulfilling personal life are mutually enriching. Professionally, I thrive on the challenge of developing fresh ideas and contributing to projects that have a positive, lasting impact. This same dedication to growth and well-being guides my personal life as a husband, father, and community member.
+                            
+                        For me, success is about finding the right balance: pursuing intellectually rigorous work while prioritizing health, family, and the simple joy of learning something new.</p>
                     </div>
                     <div class="image-wrapper">
-                        <img src="DSCF4625_crop.png" alt="Profile photo">
+                        <img src="profilePhoto.png" alt="Profile photo">
                     </div>
                 </div>
             </section>
@@ -17,28 +19,28 @@
                 <h1 class="section-title">Personal Philosophies</h1>
                 <div class="philSection">
                     <div class="philPoint card">
-                        <h3>Life, Liberty, and the Persuit of Happiness</h3>
-                        <p>I beleive that life is worth living. Each and <b>every person has immense potential and should be free to realize it</b>, if they choose to work towards it. Similarly, I beleive that happiness is found in living a good, honest, diligent, involved, and aware life.</p>
+                        <h3>Empowerment and Potential</h3>
+                        <p><b>I believe in the inherent potential of every individual</b>. My goal is to foster environments where people are empowered to pursue their goals through diligence, honesty, and self-awareness, leading to both personal and collective success.</p>
                     </div>
 
                     <div class="philPoint card">
-                        <h3>Kindness and Respect</h3>
-                        <p><b>The happiest way to live life is to be kind to yourself and others.</b> Many of the hardest parts of life can be made better simply by being kind. I try to conciously realize that virtually all people are doing their best. Getting worked up when things don't go as you'd like almost never makes the situation better. The best way to handle the highs and the lows in life are to be respectful and kind.</p>
+                        <h3>Professional Kindness</h3>
+                        <p><b>Kindness and respect are foundational to effective collaboration.</b> I approach every interaction with the understanding that people are generally doing their best. Maintaining a respectful and composed demeanor, especially during challenges, leads to better outcomes and stronger professional and personal relationships.</p>
                     </div>
 
                     <div class="philPoint card">
-                        <h3>Reasonability</h3>
-                        <p>When decision making, everyone should <b>take a moment to think, consider various aspects of a situation, ask for valuable advice, and reflect</b>. Rushed, thoughtless, or careless decisions often lead to regrets and mistakes. Aspects such as logical reasonablness, emotional awareness of yourself and others, external factors, and eventual outcomes should all be considered.</p>
+                        <h3>Reasoned Decision-Making</h3>
+                        <p>I advocate for a thoughtful and analytical approach to problem-solving. The best decisions come from <b>a deliberate process of consideration, consultation, and reflection</b>. This involves weighing logical factors, maintaining situational awareness, and considering long-term outcomes to avoid preventable errors.</p>
                     </div>
 
                     <div class="philPoint card">
-                        <h3>Appropriate Confidence, and Humility</h3>
-                        <p>I beleive <b>experts should be experts</b>, and we should let them be. When you are the expert, and you have reason to be confident, you should not be afraid to assert it. However, there are many instances where overconfidence has lead to misinformation, accidents, and heartache. When appropriate, we should not be ashamed or too arragant to receive help and input from others.</p>
+                        <h3>Confidence with Humility</h3>
+                        <p>I value expertise and believe that <b>subject-matter experts should lead in their domains</b>. It is important to be confident when one's experience warrants it, but it is equally important to remain open to input and acknowledge the limits of one's own knowledge. This balance prevents overconfidence and fosters a collaborative spirit.</p>
                     </div>
 
                     <div class="philPoint card">
-                        <h3>Hard Work and Not Being Complacent</h3>
-                        <p>With nearly all things in life, <b>the greater the reward, the higher the price to get it</b>. So if you want a lot out of life, you should expect to work for it. Complacency robs people of the greatest and most fulfilling aspects of life.</p>
+                        <h3>Commitment to Excellence</h3>
+                        <p>Meaningful achievements are the result of dedicated effort. I believe that <b>the greatest rewards are earned through hard work</b> and a refusal to become complacent. Continuous effort and a drive for improvement are essential for realizing the most fulfilling aspects of professional and personal life.</p>
                     </div>
                 </div>
             </section>
@@ -51,8 +53,9 @@
                     </div>
                     <div class="aboutSectionTextWrapper">
                         <p>I was born an raised in a small town in rural Colorado. With both of my parents being school teachers, I quickly gained a love of learning and creating. </p>
-                        <p>After years of studying, countless extracurricular activities, work, and play, I chose to study Chemical Engineering at Brigham Young Univeristy.</p>
-                        <p>There I met and married my inspiring, beautiful, and caring wife Catherina. While I might know how to make great things for the world, she knows how to make the world great. For the time being we are still living in Provo until we both go to graduate school.</p>
+                        <p>After years of studying, countless extracurricular activities, work, and play, I chose to study Chemical Engineering at Brigham Young University (BYU).</p>
+                        <p>There I met and married my inspiring, beautiful, and caring wife Catherina. While I might know how to make great things for the world, she knows how to make the world great.</p>
+                        <p>Shortly after graduating from BYU I began my PhD at Princeton University where I now reside and am enjoying life with my young and growing family.</p>
                     </div>
                 </div>
             </section>
@@ -79,7 +82,7 @@
                     <div class="aboutSectionTextWrapper">
                         <h3 class="hobby-title">Church</h3>
                         <p>Church service has always been very important to me. As a young person, I was very active in my youth group and in my congregation. I also served a two year full-time mission for <a href="https://www.churchofjesuschrist.org/comeuntochrist" target="_blank">The Church of Jesus Christ of Latter-Day Saints</a> in Indiana.</p>
-                        <p>My mission and other church service taught me the importance of putting others' needs above my own and the importance of loving every part of my life.</p>
+                        <p>My mission and other church service taught me the importance of balancing others' needs with my own and the importance of loving every part of my life.</p>
                     </div>
                 </div>
 
@@ -98,8 +101,8 @@
                         <img src="triathalon.jpg" alt="Triathlon">
                     </div>
                     <div class="aboutSectionTextWrapper">
-                        <h3 class="hobby-title">Cycling</h3>
-                        <p>Whenever we get the chance, my wife and I love getting out on our bikes. We're lucky to live in a place with plenty of bike trails near our house that we ride on frequently. We also have competed in a triathalon and plan on racing in more in the future.</p>
+                        <h3 class="hobby-title">Cycling and The Outdoors</h3>
+                        <p>Whenever we get the chance, my wife and I love getting out on our bikes, running shoes, hiking boots. We're lucky to live in a place with plenty of trails near our house that we ride on frequently.</p>
                     </div>
                 </div>
             </section>
