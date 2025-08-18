@@ -196,14 +196,14 @@
     font-weight: 600;
 }
 
-.project-content a {
+.project-content p a {
     color: var(--accent-primary);
     text-decoration: underline;
     text-decoration-color: transparent;
     transition: text-decoration-color 0.2s ease;
 }
 
-.project-content a:hover {
+.project-content p a:hover {
     text-decoration-color: var(--accent-primary);
 }
 
