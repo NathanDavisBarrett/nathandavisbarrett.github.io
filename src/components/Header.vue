@@ -35,9 +35,9 @@
           <div class="mainName">
               <h1>Nathan Davis Barrett:~$<span class="blink">_</span></h1>
               <div class="attrFullList">
-                  <span v-for="(attr, _) in codeNameAttrs" :key="attr">
+                  <span v-for="(attr, index) in codeNameAttrs" :key="attr">
                       <!-- <h2 v-if="index != 0">,&#160;</h2> -->
-                      <h2>{{attr}}</h2>
+                      <h2 v-if="index >= 0">{{attr}}</h2>
                   </span>
               </div>
           </div>
