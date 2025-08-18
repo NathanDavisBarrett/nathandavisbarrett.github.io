@@ -5,7 +5,7 @@
             <section class="tutoring-hero">
                 <div class="hero-content">
                     <h1 class="hero-title">Private Tutoring Services</h1>
-                    <p class="hero-subtitle">Personalized academic support in STEM subjects</p>
+                    <p class="hero-subtitle">Personalized academic support in STEM subjects with more than a decade of tutoring, teaching, and academic mentorship</p>
                     <div class="hero-cta">
                         <a href="#contact" class="btn btn-primary">Schedule a Session</a>
                         <a href="#subjects" class="btn btn-secondary">View Subjects</a>
@@ -16,27 +16,32 @@
             <!-- About Section -->
             <section class="about-tutoring">
                 <div class="section-content">
-                    <h2 class="section-title">Why Choose My Tutoring?</h2>
                     <div class="features-grid">
+                        <div class="feature-card card">
+                            <div class="feature-icon">💼</div>
+                            <h3>Over A Decade of Experience</h3>
+                            <p>I've tutored dozens of students from diverse socioeconomic, cultural, racial, and neurodevelopmental backgrounds.</p>
+                            <p>I've also received years of formal training in tutoring and teaching.</p>
+                        </div>
+                        <div class="feature-card card">
+                            <div class="feature-icon">📊</div>
+                            <h3>Excellent Reviews</h3>
+                            <p>I've received phenomenal reviews including written feedback, several personal referrals, and requests for repeated services in subsequent semesters.</p>
+                        </div>
                         <div class="feature-card card">
                             <div class="feature-icon">🎓</div>
                             <h3>Expert Knowledge</h3>
-                            <p>Advanced degrees in Chemical Engineering with extensive research experience in computational modeling and simulation.</p>
+                            <p>In my undergraduate and PhD work in Chemical Engineering as well in my professional experience as a computational physics engineer, I have real-world experience with the principles I teach and tutor for.</p>
                         </div>
                         <div class="feature-card card">
                             <div class="feature-icon">👨‍🏫</div>
                             <h3>Personalized Approach</h3>
-                            <p>Tailored teaching methods adapted to your learning style and academic goals.</p>
-                        </div>
-                        <div class="feature-card card">
-                            <div class="feature-icon">📊</div>
-                            <h3>Proven Results</h3>
-                            <p>Track record of helping students improve grades and gain confidence in challenging subjects.</p>
+                            <p>Every student is different. As a tutor and academic mentor, my goal is make sure you understand and material in a way that feels good and makes sense to you.</p>
                         </div>
                         <div class="feature-card card">
                             <div class="feature-icon">💻</div>
                             <h3>Modern Tools</h3>
-                            <p>Integration of computational tools and modern problem-solving techniques.</p>
+                            <p>Modern problems require modern solutions. I aim to equip you with the tools and skills you need to be a successful and independent learner now and throughout your life.</p>
                         </div>
                     </div>
                 </div>
@@ -46,45 +51,53 @@
             <section id="subjects" class="subjects-section">
                 <div class="section-content">
                     <h2 class="section-title">Subjects Offered</h2>
+                    <p>🟩: High School</p>
+                    <p>🟥: College</p>
                     <div class="subjects-grid">
                         <div class="subject-category card">
                             <h3>Mathematics</h3>
                             <ul>
-                                <li>Calculus I, II, III</li>
-                                <li>Differential Equations</li>
-                                <li>Linear Algebra</li>
-                                <li>Statistics & Probability</li>
-                                <li>Numerical Methods</li>
-                            </ul>
-                        </div>
-                        <div class="subject-category card">
-                            <h3>Engineering</h3>
-                            <ul>
-                                <li>Chemical Engineering Fundamentals</li>
-                                <li>Thermodynamics</li>
-                                <li>Fluid Mechanics</li>
-                                <li>Heat & Mass Transfer</li>
-                                <li>Process Design</li>
-                            </ul>
-                        </div>
-                        <div class="subject-category card">
-                            <h3>Programming</h3>
-                            <ul>
-                                <li>Python Programming</li>
-                                <li>MATLAB</li>
-                                <li>Data Analysis</li>
-                                <li>Scientific Computing</li>
-                                <li>Algorithm Development</li>
+                                <li>🟩 AP Calculus AB, BC</li>
+                                <li>🟩 Pre-calculus</li>
+                                <li>🟩 Algebra</li>
+                                <li>🟩 Geometry</li>
+                                <li>🟥 Calculus I, II, III</li>
+                                <li>🟥 Differential Equations</li>
+                                <li>🟥 Linear Algebra</li>
+                                <li>🟥 Numerical Methods</li>
                             </ul>
                         </div>
                         <div class="subject-category card">
                             <h3>Sciences</h3>
                             <ul>
-                                <li>Chemistry</li>
-                                <li>Physics</li>
-                                <li>Physical Chemistry</li>
-                                <li>Materials Science</li>
-                                <li>Research Methods</li>
+                                <li>🟩 AP Chemistry</li>
+                                <li>🟩 AP Physics 1</li>
+                                <li>🟥 Newtonian Physics (i.e. introductory physics)</li>
+                                <li>🟥 General Chemistry</li>
+                                <li>🟥 Organic Chemistry</li>
+                            </ul>
+                        </div>
+                        <div class="subject-category card">
+                            <h3>Programming</h3>
+                            <ul>
+                                <li>🟩🟥 Python</li>
+                                <li>🟩🟥 C++</li>
+                                <li>🟩🟥 Java</li>
+                                <li>🟩🟥 Machine Learning</li>
+                                <li>🟩🟥 Deep Learning</li>
+                                <li>🟩🟥 Data Analysis</li>
+                                <li>🟩🟥 Scientific / High-Performance Computing</li>
+                            </ul>
+                        </div>
+                        <div class="subject-category card">
+                            <h3>Engineering</h3>
+                            <ul>
+                                <li>🟩 Engineering Fundamentals</li>
+                                <li>🟥 Chemical Engineering Fundamentals</li>
+                                <li>🟥 Thermodynamics</li>
+                                <li>🟥 Fluid Mechanics</li>
+                                <li>🟥 Heat & Mass Transfer</li>
+                                <li>🟥 Process Design</li>
                             </ul>
                         </div>
                     </div>
@@ -94,47 +107,60 @@
             <!-- Pricing Section -->
             <section class="pricing-section">
                 <div class="section-content">
-                    <h2 class="section-title">Pricing & Packages</h2>
-                    <div class="pricing-grid">
-                        <div class="pricing-card card">
-                            <div class="pricing-header">
-                                <h3>Individual Session</h3>
-                                <div class="price">$60<span>/hour</span></div>
-                            </div>
-                            <ul class="pricing-features">
-                                <li>One-on-one tutoring</li>
-                                <li>Customized lesson plans</li>
-                                <li>Homework help</li>
-                                <li>Flexible scheduling</li>
-                            </ul>
-                            <a href="#contact" class="btn btn-secondary">Book Session</a>
+                    <h2 class="section-title">Pricing & Payment Structure</h2>
+                    
+                    <!-- Session Rate -->
+                    <div class="pricing-overview">
+                        <div class="rate-highlight card">
+                            <h3>Session Rate</h3>
+                            <div class="price-large">$100<span>/hour</span></div>
+                            <p>All sessions are 1 hour in length</p>
                         </div>
-                        <div class="pricing-card card featured">
-                            <div class="featured-badge">Most Popular</div>
-                            <div class="pricing-header">
-                                <h3>Package Deal</h3>
-                                <div class="price">$50<span>/hour</span></div>
+                    </div>
+
+                    <!-- Payment Structure -->
+                    <div class="payment-structure">
+                        <h3 class="structure-title">How It Works</h3>
+                        <div class="structure-grid">
+                            <div class="structure-step card">
+                                <div class="step-number">1</div>
+                                <h4>Trial Period</h4>
+                                <p>Your first 2 sessions can be paid individually at $100 each. This gives you a chance to see if we're a good fit before committing to ongoing sessions.</p>
                             </div>
-                            <ul class="pricing-features">
-                                <li>5+ sessions (save $10/hour)</li>
-                                <li>Progress tracking</li>
-                                <li>Study materials included</li>
-                                <li>Email support between sessions</li>
-                            </ul>
-                            <a href="#contact" class="btn btn-primary">Get Started</a>
+                            <div class="structure-step card">
+                                <div class="step-number">2</div>
+                                <h4>Monthly Commitment</h4>
+                                <p>After your trial sessions, you'll choose a pre-paid monthly commitment plan based on your preferred frequency and schedule.</p>
+                            </div>
                         </div>
-                        <div class="pricing-card card">
-                            <div class="pricing-header">
-                                <h3>Exam Prep</h3>
-                                <div class="price">$70<span>/hour</span></div>
+                        <h4>I accept common mobile payment platforms such as Venmo, Paypal, and Zelle as well as cash or written check.</h4>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Meeting Format Section -->
+            <section class="meeting-format-section">
+                <div class="section-content">
+                    <h2 class="section-title">Meeting Format & Location</h2>
+                    <div class="format-grid">
+                        <div class="format-option card">
+                            <div class="format-icon">💻</div>
+                            <h3>Online Sessions</h3>
+                            <p>Most sessions are conducted online via Zoom or Google Meet, providing flexibility, convenience, and interactivity for students anywhere.</p>
+                            <div class="format-features">
+                                <span class="feature-tag">Screen Sharing</span>
+                                <span class="feature-tag">Interactive Whiteboard</span>
+                                <span class="feature-tag">Session Recording Available</span>
                             </div>
-                            <ul class="pricing-features">
-                                <li>Intensive exam preparation</li>
-                                <li>Practice problems</li>
-                                <li>Test-taking strategies</li>
-                                <li>Last-minute review sessions</li>
-                            </ul>
-                            <a href="#contact" class="btn btn-secondary">Prepare Now</a>
+                        </div>
+                        <div class="format-option card">
+                            <div class="format-icon">📍</div>
+                            <h3>In-Person Sessions</h3>
+                            <p>For students in the Princeton, New Jersey area, I offer in-person tutoring at public spaces.</p>
+                            <div class="in-person-details">
+                                <p><strong>Additional Fee:</strong> $10 per session</p>
+                                <p><strong>Preferred Locations:</strong> Princeton Public Library, Princeton University Campus</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -145,53 +171,30 @@
                 <div class="section-content">
                     <h2 class="section-title">Get Started Today</h2>
                     <div class="contact-content">
-                        <div class="contact-info">
-                            <h3>Ready to improve your grades?</h3>
-                            <p>Contact me to schedule your first tutoring session. I offer both in-person and online tutoring options to fit your schedule.</p>
-                            <div class="contact-methods">
-                                <div class="contact-method">
-                                    <strong>Email:</strong>
-                                    <a href="mailto:your.email@example.com">your.email@example.com</a>
+                        <div class="contact-info-centered">
+                            <div class="contact-methods-prominent">
+                                <a href="mailto:ndb.nathan.barrett@gmail.com" class="contact-method-large contact-method-clickable">
+                                    <div class="contact-icon">📧</div>
+                                    <div class="contact-details">
+                                        <strong>Email</strong>
+                                        <span class="email-address">ndb.nathan.barrett@gmail.com</span>
+                                    </div>
+                                </a>
+                                <div class="contact-method-large">
+                                    <div class="contact-icon">⏱️</div>
+                                    <div class="contact-details">
+                                        <strong>Response Time</strong>
+                                        <span>Within 1 business day</span>
+                                    </div>
                                 </div>
-                                <div class="contact-method">
-                                    <strong>Response Time:</strong>
-                                    <span>Usually within 24 hours</span>
-                                </div>
-                                <div class="contact-method">
-                                    <strong>Availability:</strong>
-                                    <span>Evenings and weekends</span>
+                                <div class="contact-method-large">
+                                    <div class="contact-icon">📅</div>
+                                    <div class="contact-details">
+                                        <strong>Availability</strong>
+                                        <span>Weekday mornings, afternoons, and evenings</span>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="contact-form-wrapper">
-                            <form class="contact-form card">
-                                <h3>Quick Contact</h3>
-                                <div class="form-group">
-                                    <label for="name">Name</label>
-                                    <input type="text" id="name" name="name" required>
-                                </div>
-                                <div class="form-group">
-                                    <label for="email">Email</label>
-                                    <input type="email" id="email" name="email" required>
-                                </div>
-                                <div class="form-group">
-                                    <label for="subject">Subject Needed</label>
-                                    <select id="subject" name="subject" required>
-                                        <option value="">Select a subject...</option>
-                                        <option value="calculus">Calculus</option>
-                                        <option value="chemistry">Chemistry</option>
-                                        <option value="physics">Physics</option>
-                                        <option value="programming">Programming</option>
-                                        <option value="engineering">Engineering</option>
-                                        <option value="other">Other</option>
-                                    </select>
-                                </div>
-                                <div class="form-group">
-                                    <label for="message">Message</label>
-                                    <textarea id="message" name="message" rows="4" placeholder="Tell me about your tutoring needs..."></textarea>
-                                </div>
-                                <button type="submit" class="btn btn-primary">Send Message</button>
-                            </form>
                         </div>
                     </div>
                 </div>
@@ -296,8 +299,9 @@ export default {
 
 /* Features Grid */
 .features-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 2rem;
     margin-bottom: 2rem;
 }
@@ -306,6 +310,9 @@ export default {
     text-align: center;
     padding: 2rem;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    flex: 0 1 calc(33.333% - 1.333rem);
+    min-width: 250px;
+    max-width: 350px;
 }
 
 .feature-card:hover {
@@ -324,13 +331,17 @@ export default {
 
 /* Subjects Grid */
 .subjects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 2rem;
 }
 
 .subject-category {
     padding: 2rem;
+    flex: 0 1 calc(50% - 1rem);
+    min-width: 280px;
+    max-width: 400px;
 }
 
 .subject-category h3 {
@@ -352,6 +363,180 @@ export default {
 
 .subject-category li:last-child {
     border-bottom: none;
+}
+
+/* Meeting Format Section */
+.meeting-format-section {
+    margin-bottom: 4rem;
+}
+
+.format-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+}
+
+.format-option {
+    padding: 2.5rem;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.format-option:hover {
+    transform: translateY(-5px);
+}
+
+.format-icon {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.format-option h3 {
+    color: var(--accent-primary);
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.format-option p {
+    color: var(--text-secondary);
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.format-features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.feature-tag {
+    background: var(--accent-primary);
+    color: white;
+    padding: 0.25rem 0.75rem;
+    border-radius: 15px;
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+.in-person-details {
+    background: var(--bg-tertiary);
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin-top: 1rem;
+}
+
+.in-person-details p {
+    margin-bottom: 0.5rem;
+    color: var(--text-secondary);
+}
+
+.in-person-details p:last-child {
+    margin-bottom: 0;
+}
+
+.in-person-details strong {
+    color: var(--accent-primary);
+}
+
+/* Pricing Section */
+.pricing-overview {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.rate-highlight {
+    display: inline-block;
+    padding: 2rem 3rem;
+    text-align: center;
+    background: linear-gradient(135deg, var(--bg-secondary), var(--bg-tertiary));
+    border: 2px solid var(--accent-primary);
+}
+
+.rate-highlight h3 {
+    color: var(--accent-primary);
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.price-large {
+    font-size: 4rem;
+    font-weight: 700;
+    color: var(--accent-primary);
+    margin-bottom: 0.5rem;
+}
+
+.price-large span {
+    font-size: 1.25rem;
+    color: var(--text-secondary);
+}
+
+.rate-highlight p {
+    color: var(--text-secondary);
+    margin: 0;
+}
+
+/* Payment Structure */
+.payment-structure {
+    margin-bottom: 3rem;
+}
+
+.structure-title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    color: var(--text-primary);
+}
+
+.structure-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.structure-step {
+    padding: 2rem;
+    text-align: center;
+    position: relative;
+}
+
+.step-number {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background: var(--accent-primary);
+    color: white;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.structure-step h4 {
+    color: var(--accent-primary);
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+}
+
+.structure-step p {
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+/* Frequency Options */
+.frequency-options {
+    margin-bottom: 3rem;
+}
+
+.frequency-note {
+    color: var(--text-secondary);
+    font-size: 0.875rem;
+    margin-top: 0.5rem;
+    font-style: italic;
 }
 
 /* Pricing Grid */
@@ -428,14 +613,149 @@ export default {
     border-bottom: none;
 }
 
-/* Contact Section */
-.contact-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 3rem;
-    align-items: start;
+/* Payment Methods */
+.payment-methods {
+    background: var(--bg-secondary);
+    border-radius: 15px;
+    padding: 2rem;
+    text-align: center;
 }
 
+.payment-options {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.payment-option {
+    text-align: center;
+}
+
+.payment-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.payment-option h4 {
+    color: var(--accent-primary);
+    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+}
+
+.payment-option p {
+    color: var(--text-secondary);
+    font-size: 0.875rem;
+}
+
+/* Contact Section */
+.contact-content {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-info-centered {
+    text-align: center;
+    max-width: 800px;
+}
+
+.contact-info-centered h3 {
+    color: var(--accent-primary);
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.contact-info-centered p {
+    color: var(--text-secondary);
+    font-size: 1.125rem;
+    margin-bottom: 2.5rem;
+    line-height: 1.6;
+}
+
+.contact-methods-prominent {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.contact-method-large {
+    background: var(--bg-secondary);
+    border-radius: 15px;
+    padding: 2rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.contact-method-large:hover {
+    transform: translateY(-3px);
+    border-color: var(--accent-primary);
+    box-shadow: 0 10px 30px rgba(59, 130, 246, 0.1);
+}
+
+.contact-method-clickable {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    cursor: pointer;
+}
+
+.contact-method-clickable:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+.contact-method-clickable .contact-details strong {
+    color: var(--accent-primary);
+}
+
+.contact-method-clickable .email-address {
+    color: var(--text-primary);
+    font-size: 1.125rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.contact-method-clickable:hover .email-address {
+    color: var(--accent-primary);
+}
+
+.contact-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.contact-details strong {
+    color: var(--accent-primary);
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.contact-details a {
+    color: var(--text-primary);
+    text-decoration: none;
+    font-size: 1.125rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.contact-details a:hover {
+    color: var(--accent-primary);
+}
+
+.contact-details span {
+    color: var(--text-secondary);
+    font-size: 1.125rem;
+}
+
+/* Legacy contact styles for backwards compatibility */
 .contact-info h3 {
     color: var(--accent-primary);
     margin-bottom: 1rem;
@@ -507,8 +827,7 @@ export default {
     }
     
     .contact-content {
-        grid-template-columns: 1fr;
-        gap: 2rem;
+        justify-content: center;
     }
     
     .hero-cta {
@@ -518,6 +837,26 @@ export default {
     
     .pricing-card.featured {
         transform: none;
+    }
+    
+    .structure-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .format-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .contact-methods-prominent {
+        grid-template-columns: 1fr;
+    }
+    
+    .rate-highlight {
+        padding: 1.5rem 2rem;
+    }
+    
+    .price-large {
+        font-size: 3rem;
     }
 }
 
@@ -535,10 +874,35 @@ export default {
         margin-bottom: 3rem;
     }
     
-    .features-grid,
-    .subjects-grid,
+    .features-grid {
+        justify-content: center;
+    }
+    
+    .feature-card {
+        flex: 0 1 calc(50% - 1rem);
+        min-width: 220px;
+    }
+    
+    .subjects-grid {
+        justify-content: center;
+    }
+    
+    .subject-category {
+        flex: 0 1 100%;
+        min-width: 250px;
+    }
+    
     .pricing-grid {
         grid-template-columns: 1fr;
+    }
+    
+    .payment-options {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .structure-title {
+        font-size: 1.75rem;
     }
 }
 
@@ -558,6 +922,32 @@ export default {
     
     .hero-title {
         font-size: 2rem;
+    }
+    
+    .feature-card {
+        flex: 0 1 100%;
+        min-width: 200px;
+    }
+    
+    .subject-category {
+        flex: 0 1 100%;
+        min-width: 200px;
+    }
+    
+    .rate-highlight {
+        padding: 1rem 1.5rem;
+    }
+    
+    .price-large {
+        font-size: 2.5rem;
+    }
+    
+    .structure-title {
+        font-size: 1.5rem;
+    }
+    
+    .payment-methods {
+        padding: 1.5rem;
     }
 }
 </style>
