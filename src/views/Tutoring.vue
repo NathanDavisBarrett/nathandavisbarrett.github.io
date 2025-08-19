@@ -5,7 +5,7 @@
             <section class="tutoring-hero">
                 <div class="hero-content">
                     <h1 class="hero-title">Premier Private Tutoring Services</h1>
-                    <p class="hero-subtitle">Personalized academic support in STEM subjects with more than a decade of tutoring, teaching, and academic mentorship from an Ivy-League engineering scholar</p>
+                    <p class="hero-subtitle">Personalized academic support in STEM subjects from an Ivy-League PhD with more than a decade of tutoring, teaching, and academic mentorship experience</p>
                     <div class="hero-cta">
                         <a href="#contact" class="btn btn-primary">Schedule a Session</a>
                         <a href="#subjects" class="btn btn-secondary">View Subjects</a>
@@ -31,12 +31,12 @@
                         <div class="feature-card card">
                             <div class="feature-icon">🎓</div>
                             <h3>Expert Knowledge</h3>
-                            <p>In my undergraduate and PhD work in Chemical Engineering as well in my professional experience as a computational physics engineer, I have real-world experience with the principles I teach and tutor for.</p>
+                            <p>In my undergraduate and PhD work in Chemical Engineering as well as in my professional experience as a computational physics engineer, I have real-world experience with the principles I teach and tutor for.</p>
                         </div>
                         <div class="feature-card card">
                             <div class="feature-icon">👨‍🏫</div>
                             <h3>Personalized Approach</h3>
-                            <p>Every student is different. As a tutor and academic mentor, my goal is make sure you understand and material in a way that feels good and makes sense to you.</p>
+                            <p>Every student is different. As a tutor and academic mentor, my goal is to make sure you understand the material in a way that feels good and makes sense to you.</p>
                         </div>
                         <div class="feature-card card">
                             <div class="feature-icon">💻</div>
