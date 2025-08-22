@@ -4,11 +4,18 @@
             <!-- Hero Section -->
             <section class="tutoring-hero">
                 <div class="hero-content">
-                    <h1 class="hero-title">Premier Private Tutoring Services</h1>
-                    <p class="hero-subtitle">Personalized academic support in STEM subjects from an Ivy-League PhD with more than a decade of tutoring, teaching, and academic mentorship experience</p>
-                    <div class="hero-cta">
-                        <a href="#contact" class="btn btn-primary">Schedule a Session</a>
-                        <a href="#subjects" class="btn btn-secondary">View Subjects</a>
+                    <div class="hero-layout">
+                        <div class="hero-text">
+                            <h1 class="hero-title">Premier Private Tutoring Services</h1>
+                            <p class="hero-subtitle">Personalized academic support in STEM subjects from an Ivy-League PhD with more than a decade of tutoring, teaching, and academic mentorship experience</p>
+                            <div class="hero-cta">
+                                <a href="#contact" class="btn btn-primary">Schedule a Session</a>
+                                <a href="#subjects" class="btn btn-secondary">View Subjects</a>
+                            </div>
+                        </div>
+                        <div class="hero-image">
+                            <img src="DSCF4625_crop.png" alt="Nathan Barrett - Private Tutor" class="tutor-photo">
+                        </div>
                     </div>
                 </div>
             </section>
@@ -191,7 +198,7 @@
                                     <div class="contact-icon">📅</div>
                                     <div class="contact-details">
                                         <strong>Availability</strong>
-                                        <span>Weekday mornings, afternoons, and evenings</span>
+                                        <span>Weekday mornings, afternoons, and evenings (subject to availability)</span>
                                     </div>
                                 </div>
                             </div>
@@ -256,8 +263,39 @@ export default {
 .hero-content {
     position: relative;
     z-index: 1;
-    max-width: 600px;
+    max-width: 1200px;
     margin: 0 auto;
+}
+
+.hero-layout {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    text-align: left;
+}
+
+.hero-text {
+    flex: 1;
+    min-width: 0;
+}
+
+.hero-image {
+    flex: 0 0 auto;
+}
+
+.tutor-photo {
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid var(--accent-primary);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tutor-photo:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
 }
 
 .hero-title {
@@ -826,6 +864,17 @@ export default {
         padding-top: 160px;
     }
     
+    .hero-layout {
+        flex-direction: column;
+        text-align: center;
+        gap: 2rem;
+    }
+    
+    .tutor-photo {
+        width: 220px;
+        height: 220px;
+    }
+    
     .contact-content {
         justify-content: center;
     }
@@ -868,6 +917,15 @@ export default {
     .tutoring-hero {
         padding: 3rem 1.5rem;
         margin-bottom: 3rem;
+    }
+    
+    .hero-layout {
+        gap: 1.5rem;
+    }
+    
+    .tutor-photo {
+        width: 180px;
+        height: 180px;
     }
     
     .section-content {
@@ -914,6 +972,16 @@ export default {
     .tutoring-hero {
         padding: 2rem 1rem;
         margin-bottom: 2rem;
+    }
+    
+    .hero-layout {
+        gap: 1rem;
+    }
+    
+    .tutor-photo {
+        width: 150px;
+        height: 150px;
+        border-width: 3px;
     }
     
     .section-title {
