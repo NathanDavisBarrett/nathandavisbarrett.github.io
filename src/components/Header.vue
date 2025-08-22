@@ -188,7 +188,7 @@ export default {
 .hero-section {
     position: relative;
     z-index: 1;
-    padding: 6rem 2rem 4rem 2rem;
+    padding: 8rem 2rem 3rem 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -288,7 +288,7 @@ export default {
     }
     
     .hero-section {
-        padding: 5rem 1rem 3rem 1rem;
+        padding: 17rem 1rem 2rem 1rem;
     }
 }
 
@@ -317,7 +317,7 @@ export default {
     }
     
     .hero-section {
-        padding: 4.5rem 1rem 2rem 1rem;
+        padding: 15rem 1rem 1.5rem 1rem;
     }
     
     .attrFullList h2 {
@@ -356,7 +356,7 @@ export default {
     }
     
     .hero-section {
-        padding: 4rem 0.5rem 1.5rem 0.5rem;
+        padding: 15rem 0.5rem 1rem 0.5rem;
     }
     
     .attrFullList {

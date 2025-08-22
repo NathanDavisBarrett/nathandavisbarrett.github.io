@@ -861,7 +861,7 @@ export default {
 /* Responsive Design */
 @media (max-width: 968px) {
     .tutoring {
-        padding-top: 160px;
+        padding-top: 00px;
     }
     
     .hero-layout {
@@ -911,7 +911,7 @@ export default {
 
 @media (max-width: 768px) {
     .tutoring {
-        padding-top: 180px;
+        padding-top: 000px;
     }
     
     .tutoring-hero {
@@ -966,7 +966,7 @@ export default {
 
 @media (max-width: 480px) {
     .tutoring {
-        padding-top: 200px;
+        padding-top: 00px;
     }
     
     .tutoring-hero {
