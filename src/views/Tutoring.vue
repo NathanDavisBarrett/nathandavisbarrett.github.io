@@ -121,7 +121,7 @@
                         <div class="rate-highlight card">
                             <h3>Session Rate</h3>
                             <div class="price-large">$100<span>/hour</span></div>
-                            <p>All sessions are 1 hour in length</p>
+                            <p>Sessions are usually 1 hour in length</p>
                         </div>
                     </div>
 
@@ -131,11 +131,16 @@
                         <div class="structure-grid">
                             <div class="structure-step card">
                                 <div class="step-number">1</div>
-                                <h4>Trial Period</h4>
-                                <p>Your first 2 sessions can be paid individually at $100 each. This gives you a chance to see if we're a good fit before committing to ongoing sessions.</p>
+                                <h4>Free Consultation</h4>
+                                <p>Schedule at 15-20 minute consultation via phone, Zoom, or Google Meet to determine if we're a good match and to discuss logistics.</p>
                             </div>
                             <div class="structure-step card">
                                 <div class="step-number">2</div>
+                                <h4>Trial Period</h4>
+                                <p>Your first 2 sessions can be paid individually at $100 each. This provides a low-risk beginning before committing to ongoing sessions.</p>
+                            </div>
+                            <div class="structure-step card">
+                                <div class="step-number">3</div>
                                 <h4>Monthly Commitment</h4>
                                 <p>After your trial sessions, you'll choose a pre-paid monthly commitment plan based on your preferred frequency and schedule.</p>
                             </div>
@@ -528,8 +533,9 @@ export default {
 }
 
 .structure-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 2rem;
     margin-bottom: 2rem;
 }
@@ -538,6 +544,8 @@ export default {
     padding: 2rem;
     text-align: center;
     position: relative;
+    flex: 0 1 300px;
+    max-width: 400px;
 }
 
 .step-number {
