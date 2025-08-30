@@ -185,11 +185,11 @@
                     <div class="contact-content">
                         <div class="contact-info-centered">
                             <div class="contact-methods-prominent">
-                                <a href="mailto:ndb.nathan.barrett@gmail.com" class="contact-method-large contact-method-clickable">
+                                <a href="mailto:NathanDavisBarrettTutoring@gmail.com" class="contact-method-large contact-method-clickable">
                                     <div class="contact-icon">📧</div>
                                     <div class="contact-details">
                                         <strong>Email</strong>
-                                        <span class="email-address">ndb.nathan.barrett@gmail.com</span>
+                                        <span class="email-address">NathanDavisBarrettTutoring@gmail.com</span>
                                     </div>
                                 </a>
                                 <div class="contact-method-large">
