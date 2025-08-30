@@ -184,24 +184,27 @@
                     <h2 class="section-title">Get Started Today</h2>
                     <div class="contact-content">
                         <div class="contact-info-centered">
-                            <div class="contact-methods-prominent">
-                                <a href="mailto:NathanDavisBarrettTutoring@gmail.com" class="contact-method-large contact-method-clickable">
-                                    <div class="contact-icon">📧</div>
-                                    <div class="contact-details">
-                                        <strong>Email</strong>
-                                        <span class="email-address">NathanDavisBarrettTutoring@gmail.com</span>
-                                    </div>
+                            <!-- Primary Email Contact -->
+                            <div class="primary-contact-card card">
+                                <div class="contact-icon-large">📧</div>
+                                <p>Send me an email to schedule your free consultation</p>
+                                <a href="mailto:NathanDavisBarrettTutoring@gmail.com" class="email-button">
+                                    NathanDavisBarrettTutoring@gmail.com
                                 </a>
-                                <div class="contact-method-large">
+                            </div>
+                            
+                            <!-- Contact Details Grid -->
+                            <div class="contact-details-grid">
+                                <div class="contact-detail-item">
                                     <div class="contact-icon">⏱️</div>
-                                    <div class="contact-details">
+                                    <div class="contact-info-text">
                                         <strong>Response Time</strong>
                                         <span>Within 1 business day</span>
                                     </div>
                                 </div>
-                                <div class="contact-method-large">
+                                <div class="contact-detail-item">
                                     <div class="contact-icon">📅</div>
-                                    <div class="contact-details">
+                                    <div class="contact-info-text">
                                         <strong>Availability</strong>
                                         <span>Weekday mornings, afternoons, and evenings (subject to availability)</span>
                                     </div>
@@ -703,6 +706,7 @@ export default {
 .contact-info-centered {
     text-align: center;
     max-width: 800px;
+    width: 100%;
 }
 
 .contact-info-centered h3 {
@@ -719,86 +723,122 @@ export default {
     line-height: 1.6;
 }
 
-.contact-methods-prominent {
+/* Primary Email Contact Card */
+.primary-contact-card {
+    background: linear-gradient(135deg, var(--bg-secondary), var(--bg-tertiary));
+    border: 2px solid var(--accent-primary);
+    border-radius: 20px;
+    padding: 3rem 2rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.primary-contact-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 50% 50%, rgba(59, 130, 246, 0.05) 0%, transparent 70%);
+    pointer-events: none;
+}
+
+.primary-contact-card > * {
+    position: relative;
+    z-index: 1;
+}
+
+.contact-icon-large {
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
+}
+
+.primary-contact-card h3 {
+    color: var(--accent-primary);
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.primary-contact-card p {
+    color: var(--text-secondary);
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+.email-button {
+    display: inline-block;
+    background: var(--accent-primary);
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 12px;
+    text-decoration: none;
+    font-size: 1.125rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(59, 130, 246, 0.2);
+    overflow-wrap: break-word;
+    line-height: 1.4;
+    max-width: 100%;
+}
+
+.email-button:hover {
+    background: var(--accent-secondary);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(59, 130, 246, 0.3);
+    text-decoration: none;
+    color: white;
+}
+
+/* Contact Details Grid */
+.contact-details-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
     margin-top: 2rem;
 }
 
-.contact-method-large {
+.contact-detail-item {
     background: var(--bg-secondary);
     border-radius: 15px;
     padding: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border: 2px solid transparent;
 }
 
-.contact-method-large:hover {
+.contact-detail-item:hover {
     transform: translateY(-3px);
-    border-color: var(--accent-primary);
-    box-shadow: 0 10px 30px rgba(59, 130, 246, 0.1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
-.contact-method-clickable {
-    text-decoration: none;
-    color: inherit;
-    display: block;
-    cursor: pointer;
-}
-
-.contact-method-clickable:hover {
-    text-decoration: none;
-    color: inherit;
-}
-
-.contact-method-clickable .contact-details strong {
-    color: var(--accent-primary);
-}
-
-.contact-method-clickable .email-address {
-    color: var(--text-primary);
-    font-size: 1.125rem;
-    font-weight: 500;
-    transition: color 0.3s ease;
-}
-
-.contact-method-clickable:hover .email-address {
-    color: var(--accent-primary);
-}
-
-.contact-icon {
+.contact-detail-item .contact-icon {
     font-size: 2.5rem;
-    margin-bottom: 1rem;
+    flex-shrink: 0;
 }
 
-.contact-details {
+.contact-info-text {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
+    text-align: left;
 }
 
-.contact-details strong {
+.contact-info-text strong {
     color: var(--accent-primary);
     font-size: 1.25rem;
     font-weight: 600;
 }
 
-.contact-details a {
-    color: var(--text-primary);
-    text-decoration: none;
-    font-size: 1.125rem;
-    font-weight: 500;
-    transition: color 0.3s ease;
-}
-
-.contact-details a:hover {
-    color: var(--accent-primary);
-}
-
-.contact-details span {
+.contact-info-text span {
     color: var(--text-secondary);
-    font-size: 1.125rem;
+    font-size: 1rem;
+    line-height: 1.4;
 }
 
 /* Legacy contact styles for backwards compatibility */
@@ -904,8 +944,13 @@ export default {
         grid-template-columns: 1fr;
     }
     
-    .contact-methods-prominent {
+    .contact-details-grid {
         grid-template-columns: 1fr;
+    }
+    
+    .email-button {
+        font-size: 1rem;
+        padding: 0.875rem 1.5rem;
     }
     
     .rate-highlight {
