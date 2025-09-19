@@ -27,6 +27,32 @@
                         <img src="BranchAndBound.PNG" alt="MILP solver project">
                     </div>
                 </div>
+                
+                                <div class="project-card card">
+                    <div class="project-content">
+                        <h2 class="project-title">Reusable Landing Vehicle Optimization</h2>
+                        <div class="project-tags">
+                            <span class="tag">Optimization</span>
+                            <span class="tag">Uncertainty Modeling</span>
+                            <span class="tag">Aerospace</span>
+                            <span class="tag">Python</span>
+                        </div>
+                        <p>This project focuses on optimizing the fuel-efficient landing of reusable space vehicles, a transformative innovation in the aerospace industry. By leveraging advanced optimization techniques, the project addresses the challenges of non-linear and non-convex dynamics inherent in such landings.</p>
+                        <p><strong>Sequential Convexification:</strong> The project employs a first-order Taylor approximation to relax non-convexities, reformulating the problem as a Quadratic Second-Order Cone Program (QCQP). This approach ensures rapid and globally optimal solutions, even for large problem instances.</p>
+                        <p><strong>Stochastic Programming Architecture:</strong> A major contribution of this work is the introduction of a general stochastic programming framework. This architecture handles uncertainty in parameters such as wind speed, initial conditions, and environmental factors through Monte Carlo-generated scenarios, enabling robust and adaptable solutions.</p>
+                        <p><strong>Software Engineering Excellence:</strong> The project adheres to rigorous software engineering practices, including thorough documentation, object-oriented design, and extensive unit testing. These principles ensure scalability, maintainability, and clarity in the codebase.</p>
+                        <p>This work demonstrates expertise in targeting and optimization, estimation and uncertainty modeling, and simulation—key skills for aerospace applications. It also aligns with cutting-edge research, drawing inspiration from the work of Szmuk et al. on successive convexification for powered landings.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/NathanDavisBarrett/ModelPredictiveControl/tree/main/ResuableLandingVehicle" target="_blank" class="btn btn-primary">
+                                View on GitHub
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-image">
+                        <img src="MultiStart_Initial.gif" alt="Reusable Landing Vehicle Optimization">
+                    </div>
+                </div>
+
                 <div class="project-card card">
                     <div class="project-image">
                         <img src="computationalDecisionMaking.png" alt="Computational Decision Making Course">
