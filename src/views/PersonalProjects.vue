@@ -28,7 +28,10 @@
                     </div>
                 </div>
                 
-                                <div class="project-card card">
+                <div class="project-card card">
+                    <div class="project-image">
+                        <img src="MultiStart_Initial.gif" alt="Reusable Landing Vehicle Optimization">
+                    </div>
                     <div class="project-content">
                         <h2 class="project-title">Reusable Landing Vehicle Optimization</h2>
                         <div class="project-tags">
@@ -48,15 +51,9 @@
                             </a>
                         </div>
                     </div>
-                    <div class="project-image">
-                        <img src="MultiStart_Initial.gif" alt="Reusable Landing Vehicle Optimization">
-                    </div>
                 </div>
 
                 <div class="project-card card">
-                    <div class="project-image">
-                        <img src="computationalDecisionMaking.png" alt="Computational Decision Making Course">
-                    </div>
                     <div class="project-content">
                         <h2 class="project-title">Computational Decision Making for Regular People</h2>
                         <div class="project-tags">
@@ -75,8 +72,14 @@
                             </a>
                         </div>
                     </div>
+                    <div class="project-image">
+                        <img src="computationalDecisionMaking.png" alt="Computational Decision Making Course">
+                    </div>
                 </div>
                 <div class="project-card card">
+                    <div class="project-image">
+                        <img src="McCabeThile.png" alt="NathanLibrary project">
+                    </div>
                     <div class="project-content">
                         <h2 class="project-title">The NathanLibrary</h2>
                         <div class="project-tags">
@@ -93,15 +96,9 @@
                             </a>
                         </div>
                     </div>
-                    <div class="project-image">
-                        <img src="McCabeThile.png" alt="NathanLibrary project">
-                    </div>
                 </div>
 
                 <div class="project-card card">
-                    <div class="project-image">
-                        <img src="NLogo_BluePurple.png" alt="Web Development projects">
-                    </div>
                     <div class="project-content">
                         <h2 class="project-title">Various Web Development Projects</h2>
                         <div class="project-tags">
@@ -117,6 +114,9 @@
                                 View On GitHub
                             </a>
                         </div>
+                    </div>
+                    <div class="project-image">
+                        <img src="NLogo_BluePurple.png" alt="Web Development projects">
                     </div>
                 </div>
             </div>
@@ -154,10 +154,6 @@
     align-items: flex-start;
     text-align: left;
     min-height: 400px;
-}
-
-.project-card:nth-child(even) {
-    flex-direction: row-reverse;
 }
 
 .project-image {
