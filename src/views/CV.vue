@@ -10,7 +10,7 @@
                             <h4>Princeton University (PU)</h4>
                             <p>September 2022 - Present</p>
                         </div>
-                        <p class="degree">Ph.D. in Chemical Engineering (3rd year)</p>
+                        <p class="degree">Ph.D. in Chemical Engineering (4th year)</p>
                         <ul>
                             <li>Advisor: Christos Maravelias</li>
                             <li>Current Project: Modeling/solution techniques to increase detail of thermal power plant startup/shutdown dynamics in unit commitment models</li>
