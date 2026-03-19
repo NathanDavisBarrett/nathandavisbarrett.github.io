@@ -97,14 +97,39 @@
 
                     <div class="subcvSection card">
                         <div class="subcvSectionHeader">
+                            <h4>(Upcoming) Operations Research Intern</h4>
+                            <p>Jun 2026 - Sep 2026</p>
+                        </div>
+                        <p class="role">United Airlines</p>
+                        <ul>
+                            <li>Partner with cross-functional teams (e.g., Airport Ops, Network Planning, Revenue Mgmt, Digital Products) to translate complex problems into analytical requirements and influence enterprise strategy.</li>
+                            <li>Build and apply mathematical models and advanced analytics to generate practical solutions with measurable operational and financial impact.</li>
+                            <li>Deliver value through end-to-end project work, research &amp; development, and stakeholder communication.</li>
+                        </ul>
+                    </div>
+
+                    <div class="subcvSection card">
+                        <div class="subcvSectionHeader">
                             <h4>Tutor (Master Level)</h4>
                             <p>May 2024 - Present</p>
                         </div>
                         <p class="role">Princeton Tutoring</p>
                         <ul>
                             <li>Authored and delivered customized curricula to multiple high-school and undergraduate students</li>
-                            <li>Taught and demonstrated topics such as dynamic programming, order of complexity, inheritance, polymorphism, the single-responsibility principle, documentation, and unit testing</li>
+                            <li>Taught and demonstrated topics such as dynamic programming, optimization, deep learning, order of complexity, inheritance, polymorphism, the single-responsibility principle, documentation, and unit testing</li>
                             <li>Received personal recommendations and requests as a repeat tutor for subsequent semesters</li>
+                        </ul>
+                    </div>
+
+                    <div class="subcvSection card">
+                        <div class="subcvSectionHeader">
+                            <h4>Research Mentor</h4>
+                            <p>Sep 2025 - Mar 2026</p>
+                        </div>
+                        <p class="role">Lumiere Education</p>
+                        <ul>
+                            <li>Mentored 4 students in independent research projects covering dynamic modeling, optimal control, energy systems optimization, and LLM fine-tuning</li>
+                            <li>Multiple students submitted their written papers to high-school level academic journals</li>
                         </ul>
                     </div>
                     
